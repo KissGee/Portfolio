@@ -1,52 +1,13 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* CSS reset */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
+/* Body mody */
 body {
   display: flex;
   justify-content: center;
@@ -54,6 +15,8 @@ body {
   height: 100vh;
   background: url(assets/leaf.jpg) no-repeat center center fixed;
   background-size: cover;
+  font-family: 'Sofia';
+  font-size: 18px
 }
 
 /* Flag mody */
@@ -66,7 +29,61 @@ body {
 .portfolio {
   width: 500px;
   max-width: calc(100vw - 10px);
-  background-color: rgba(60, 60, 60, .8);
+  background-color: rgba(60, 60, 60, .9);
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, .8) 15px 10px 80px;
+  box-shadow: rgba(0, 0, 0, .9) 15px 10px 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.content {
+  padding: 15% 15%;
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+.head, .content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.head, .about {
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.about {
+  padding: 5%;
+}
+
+.links {
+  text-align: center;
+}
+
+.profile-picture {
+  margin-top: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 30%;
+  padding: 3px;
+  background-color: darkgray;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+h1 {
+  font-size: 35px
+}
+
+a {
+  color: rgba(0,0,0,.7);
+}
+
+a:hover {
+  color: darkolivegreen;
 }
